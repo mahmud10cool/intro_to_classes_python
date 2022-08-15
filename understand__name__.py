@@ -9,4 +9,9 @@ def main():
 # Its to signal the reader that the code is script
 if __name__ == '__main__':
     main()
+
+    # Putting things here makes sure errors are not exported
+    # It is a test region
+
+    # A completely useless code
     _ = "don't use me" # unspoken rule not to use it
