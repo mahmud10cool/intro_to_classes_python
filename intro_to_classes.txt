@@ -1,0 +1,136 @@
+Introduction to classes:
+- Example:
+	- Make a website with robots for lonely people
+	- Two robots
+	- Robot 1: Red, 30
+	- Robot 2: Blue, 4
+
+- To create a system like this we need a way to represent
+these different entities.
+	- That is where classes and objects come in
+
+- First thing we need to store
+	- The properties that the robots have
+	- Second information is the set of functionalities
+		- This may represented using a funtion
+- A nice way to organize this
+	- Yes, an object
+	- An object can represent something
+	
+- Once you create an object, you can put it in a variable
+	- You can then use the variable to access all the information
+	within the object
+
+- These variables are called instance variables or attributes
+	- Functions within objects are called methods
+
+- What is a class?
+	- It is a blueprint from which we can make an object
+	- Class to specify attributes, functions
+
+- The class for this example will have:
+	- name:
+	- color:
+	- weight:
+
+- One more thing to note
+	- Class need to be given a name
+	- In this case the class is given the name "robot"
+	
+Example pseudocode:
+
+Robot r1 = new Robot(); # Robot() is the class
+r1.name = "Tom";
+r1.color = "red";
+r1.weight = 30;
+
+Robot R2 = new Robot();
+r2.name = "Jerry"
+r2.color = "blue";
+r2.weight = 40;
+
+# New constructor
+Robot r1 =
+	new Robot("Tom", "red", 30);
+Robot r2 = 
+	new Robot("Jerry", "blue", 40);
+
+r1.introduceSelf();
+r2.introduceSelf();
+
+Pseudocode for the class:
+
+class Robot{
+	String name;
+	String color;
+	int weight;
+	
+	Robot(String n, String C, int w){
+		this.name = n;
+		this.color = c;
+		this.weight = w;
+	}
+
+
+	void introduceSelf() {
+		System.out.println(
+			"My name is " + this.name);
+	}
+}
+
+Introduction to classes and objects Part 2
+------------------------------------------
+- Thank Brilliant for sponsoring
+
+Robot
+- name:
+- color:
+- weight:
+
++ introduceSelf()
+
+Two examples were given
+- Tom, red, 30
+- Jerry, blue, 40
+
+On top of that we have another class
+- name:
+- personality:
+- isSitting: (bool)
+-> Using this class we will be able to create person objects
+
+Let's say this person class has a few methods
++ sitDown()
++ standUp()
+>> These functions will be able to change the state of the isSitting
+	attribute
+
+Let's say we want to match person to robot
+	- We add another attribute to the Person class
+	- Let's call it robotOwned:
+	- We set the robotOwned attribute to the name of the robot
+
+Example pseudocode:
+-------------------
+I am not going to write anymore because it is hard to keep up
+Let me listen compeletely once and then start writing
+
+
+Pseudocode for the class:
+-------------------------
+class Robot{
+	String name;
+	String color;
+	int weight;
+
+	Robot(String n, String c, int w) {
+		this.name = n;
+		this.color = c;
+		this.weight = w;
+	}
+
+	void introduceSelf() {
+		System.out.println(
+		 "My name is " + this.name)
+	}
+
