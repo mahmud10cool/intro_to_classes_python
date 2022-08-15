@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 
 class Robot:
+    def __init__(self, givenName, givenColor, givenWeight):
+        self.name = givenName
+        self.color = givenColor
+        self.weight = givenWeight
+        
     def introduce_self(self):
         print("My name is " + self.name)
         # Self is an additional argument
